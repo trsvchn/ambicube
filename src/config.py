@@ -20,3 +20,9 @@ subcube_footer = '(0.5,0) -- ({1-\\radius},0) arc (-90:0:\\radius) -- (1,{1-\\ra
                  'arc (180:270:\\radius) -- cycle;\n'
 cube_footer = '\end{scope}\n' \
               '\end{tikzpicture}\n'
+temp_dir = './cubes'
+render_cmd = r'pdflatex --jobname=%s ' \
+             r'-synctex=1 -interaction=nonstopmode ' \
+             r'-output-directory %s ' \
+             r'"\def\file{%s} \def\angle{%s} \input{cube.tex}"'
+main_render_cmd = 'pdflatex --jobname="F2L" -synctex=1 -interaction=nonstopmode -output-directory . main.tex'
