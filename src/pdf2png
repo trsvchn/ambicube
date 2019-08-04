@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+INPUT="./images/*.pdf"
+for f in $INPUT
+do
+  OUT_F=$(basename "$f" .pdf)
+  OUTPUT=./images/$OUT_F.png
+	echo "Converting $f into $OUTPUT"
+	convert -density 300 "$f" -quality 100 -resize 128x128 "$OUTPUT"
+done
