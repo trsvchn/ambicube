@@ -1,28 +1,68 @@
-\documentclass[10pt]{article}
+\documentclass[12pt, a3paper]{article}
 
+\usepackage{longtable}
 \usepackage{geometry}
 	\geometry{top=10mm}
 	\geometry{bottom=10mm}
-	\geometry{left=10mm}
-	\geometry{right=10mm}
+	\geometry{left=5mm}
+	\geometry{right=5mm}
 
 \usepackage{graphicx}
 \graphicspath{{./images/}}
 
+\newcommand{\scale}{1}
+
 \begin{document}
 \pagestyle{empty}
-\begin{center}
-	\begin{tabular}{|c|c||c|c|}
-	\hline
-	TEXT & TEXT & TEXT & TEXT \\
-	IMAGE & IMAGE  &  IMAGE & IMAGE \\
-	TEXT & TEXT & TEXT & TEXT \\
-	\hline
-	TEXT & TEXT & TEXT & TEXT \\
-	IMAGE & IMAGE  &  IMAGE & IMAGE \\
-	TEXT & TEXT & TEXT & TEXT \\
-	\hline
 
+\begin{center}
+	\begin{longtable}{c|c||c|c}
+	\Large{LEFT} & \Large{RIGHT} & \Large{LEFT} & \Large{RIGHT}\vspace{1ex}\\
+	\hline
+	\includegraphics[scale=\scale]{1l} & \includegraphics[scale=\scale]{1r}  &  \includegraphics[scale=\scale]{2l} & \includegraphics[scale=\scale]{2r} \\
+	(L' U L) & (R U' R') & (L' U L) U' ( ) U2 ( ) & (R U' R') U ( ) U2 ( ) \\
+	\hline
+	\hline
+	\includegraphics[scale=\scale]{3l} & \includegraphics[scale=\scale]{3r}  &  \includegraphics[scale=\scale]{4l} & \includegraphics[scale=\scale]{4r} \\
+	(L' U' L) & (R U R') & U (L' U' L) U' ( ) & U' (R U R') U ( ) \\
+	\hline
+	\includegraphics[scale=\scale]{5l} & \includegraphics[scale=\scale]{5r}  &  \includegraphics[scale=\scale]{6l} & \includegraphics[scale=\scale]{6r} \\
+	U (L' U2 L) U2 (U) & U' (R U2 R') U2 (U') & U (L' U' L) U2 (U) & U' (R U R') U2 (U') \\
+	\hline
+	\hline
+	\includegraphics[scale=\scale]{7l} & \includegraphics[scale=\scale]{7r}  &  \includegraphics[scale=\scale]{8l} & \includegraphics[scale=\scale]{8r} \\
+	U (L' U L) U' (U') & U' (R U' R') U (U) & (L' U' L) U2 (U) U' (U) & (R U R') U2 (U') U (U') \\
+	\hline
+	\hline
+	\includegraphics[scale=\scale]{9l} & \includegraphics[scale=\scale]{9r}  &  \includegraphics[scale=\scale]{10l} & \includegraphics[scale=\scale]{10r} \\
+	U (L' U L) U2 ( ) & U' (R U' R') U2 ( ) & U (L' U' L) y' U' [R U R'] & U' (R U R') y U [L' U' L] \\
+	\hline
+	\hline
+	\includegraphics[scale=\scale]{11l} & \includegraphics[scale=\scale]{11r}  &  \includegraphics[scale=\scale]{12l} & \includegraphics[scale=\scale]{12r} \\
+	(L' U2 L) U (U') & (R U2 R') U' (U) & (L' U' L) U2 ( ) U ( ) & (R U R') U2 ( ) U' ( ) \\
+	\hline
+	\hline
+	\includegraphics[scale=\scale]{13l} & \includegraphics[scale=\scale]{13r}  &  \includegraphics[scale=\scale]{14l} & \includegraphics[scale=\scale]{14r} \\
+	(L' U' L) U' (U) & (R U R') U (U') & (L' U2 L) U' (U) & (R U2 R') U (U') \\
+	\hline
+	\hline
+	\includegraphics[scale=\scale]{15l} & \includegraphics[scale=\scale]{15r}  &  \includegraphics[scale=\scale]{16l} & \includegraphics[scale=\scale]{16r} \\
+	(L' U' L) U ( ) & (R U R') U' ( ) & (L' U L) U' ( ) & (R U' R') U ( ) \\
+	\hline
+	\includegraphics[scale=\scale]{17l} & \includegraphics[scale=\scale]{17r}  &  \includegraphics[scale=\scale]{18l} & \includegraphics[scale=\scale]{18r} \\
+	(L' U L) U (U') U2 ( ) & (R U' R') U' (U) U2 ( ) & (L' U L) U ( ) y' U' [R U R'] & (R U' R') U' ( ) y U [L' U' L] \\
+	\hline
+	\hline
+	& & \includegraphics[scale=\scale]{19l} & \includegraphics[scale=\scale]{19r} \\
+	& & U' (L' U L) U y' [R U' R'] & U (R U' R') U' y [L' U L] \\
+	\hline
+	\end{longtable}
+	% Non-symetrical positions
+	\begin{tabular}{c|c|c}
+		\hline
+		\includegraphics[scale=\scale]{20r} & \includegraphics[scale=\scale]{21r} & \includegraphics[scale=\scale]{22r} \\
+		(R U R') U' ( ) U' ( ) & U (R U2 R') y [L' U' L] & (R U' R') U y' [R' U2 R] U2 [U] \\
+		\hline
 	\end{tabular}
 \end{center}
 \end{document}
