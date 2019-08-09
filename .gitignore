@@ -46,5 +46,8 @@ venv.bak/
 
 # IDEA config files
 .idea/
+
+# Build files
 src/cubes/*.tex
 src/images/*.pdf
+src/images/*.png

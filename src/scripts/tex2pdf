@@ -1,0 +1,16 @@
+#!/bin/bash
+
+TEX_TEMLPATE=cube.tex
+OUTPUT_DIR=images
+ANGLE=120
+
+# Checks the position (state) orientation
+# 150 for left positions, 120 for right and others
+if [[ $(basename $1) == *"left"* ]]; then
+  ANGLE=150
+fi
+
+JOBNAME="$(basename $2 .pdf)"
+
+pdflatex --jobname="$JOBNAME" -output-directory $OUTPUT_DIR "\def\file{$1} \def\angle{$ANGLE} \input{$TEX_TEMLPATE}"
+

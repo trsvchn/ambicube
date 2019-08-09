@@ -1,0 +1,7 @@
+#!/bin/bash
+
+DENSITY=300
+QUALITY=100
+SIZE=256x256
+
+convert -density $DENSITY $1 -quality $QUALITY -resize $SIZE $2
