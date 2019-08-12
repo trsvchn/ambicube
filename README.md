@@ -1,4 +1,6 @@
-# F2L
+# First Two Layers Algorithms for Ambidexters 
+
+> Collection of mirrored F2L algorithms for ambidexterity practicing aiming to involve both hands in Rubik's Cube solving coequally.
 
 |    | LEFT                       | RIGHT                     | LEFT                          | RIGHT                           |
 |:---|:--------------------------:|:-------------------------:|:-----------------------------:|:-------------------------------:|
