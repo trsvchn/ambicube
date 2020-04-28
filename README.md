@@ -2,30 +2,30 @@
 
 > Collection of mirrored F2L algorithms for ambidexterity practicing aiming to involve both hands in Rubik's Cube solving coequally.
 
-|    | LEFT                       | RIGHT                     | LEFT                          | RIGHT                           |
-|:---|:--------------------------:|:-------------------------:|:-----------------------------:|:-------------------------------:|
-| 1  | ![1_left]                  | ![1_right]                | ![2_left]                     | ![2_right]                      |
-|    | U' (L’ U L)                | U (R U’ R’)               | (L’ U L) U’ ( ) U2 ( )        | (R U’ R’) U ( ) U2 ( )          |
-| 2  | ![3_left]                  | ![3_right]                | ![4_left]                     | ![4_right]                      |
-|    | (L’ U’ L)                  | (R U R’)                  | U (L’ U’ L) U’ ( )            | U’ (R U R’) U ( )               |
-| 3  | ![5_left]                  | ![5_right]                | ![6_left]                     | ![6_right]                      |
-|    | U (L’ U2 L) U2 (U)         | U’ (R U2 R’) U2 (U’)      | U (L’ U’ L) U2 (U)            | U’ (R U R’) U2 (U’)             |
-| 4  | ![7_left]                  | ![7_right]                | ![8_left]                     | ![8_right]                      |
-|    | U (L’ U L) U’ (U’)         | U’ (R U’ R’) U (U)        | (L’ U’ L) U2 (U) U’ (U)       | (R U R’) U2 (U’) U (U’)         |
-| 5  | ![9_left]                  | ![9_right]                | ![10_left]                    | ![10_right]                     |
-|    | U (L’ U L) U2 ( )          | U’ (R U’ R’) U2 ( )       | U (L’ U’ L) y’ U’ [R U R’]    | U’ (R U R’) y U [L’ U’ L]       |
-| 6  | ![11_left]                 | ![11_right]               | ![12_left]                    | ![12_right]                     |
-|    | (L’ U2 L) U (U’)           | (R U2 R’) U’ (U)          | (L’ U’ L) U2 ( ) U ( )        | (R U R’) U2 ( ) U’ ( )          |
-| 7  | ![13_left]                 | ![13_right]               | ![14_left]                    | ![14_right]                     |
-|    | (L’ U’ L) U’ (U)           | (R U R’) U (U’)           | (L’ U2 L) U’ (U)              | (R U2 R’) U (U’)                |
-| 8  | ![15_left]                 | ![15_right]               | ![16_left]                    | ![16_right]                     |
-|    | (L’ U’ L) U ( )            | (R U R’) U’ ( )           | (L’ U L) U’ ( )               | (R U’ R’) U ( )                 |
-| 9  | ![17_left]                 | ![17_right]               | ![18_left]                    | ![18_right]                     |
-|    | (L’ U L) U (U’) U2 ( )     | (R U’ R’) U’ (U) U2 ( )   | (L’ U L) U ( ) y’ U’ [R U R’] | (R U’ R’) U’ ( ) y U [L’ U’ L]  |
-| 10 | ![19_left]                 | ![19_right]               |                               | ![22_right]                     |
-|    | U’ (L’ U L) U y’ [R U’ R’] | U (R U’ R’) U’ y [L’ U L] |                               | (R U’ R’) U y’ [R’ U2 R] U2 [U] |
-| 11 |                            | ![20_right]               |                               | ![21_right]                     |
-|    |                            | (R U R’) U’ ( ) U’ ( )    |                               | (R U’ R’) U y’ [R’ U2 R] U2 [U] |
+|    | LEFT                       | RIGHT                     | LEFT                          | RIGHT                           |    |
+|:---|:--------------------------:|:-------------------------:|:-----------------------------:|:-------------------------------:|---:|
+| 1  | ![1_left]                  | ![1_right]                | ![2_left]                     | ![2_right]                      | 1  |
+|    | U' (L’ U L)                | U (R U’ R’)               | (L’ U L) U’ ( ) U2 ( )        | (R U’ R’) U ( ) U2 ( )          |    |
+| 2  | ![3_left]                  | ![3_right]                | ![4_left]                     | ![4_right]                      | 2  |
+|    | (L’ U’ L)                  | (R U R’)                  | U (L’ U’ L) U’ ( )            | U’ (R U R’) U ( )               |    |
+| 3  | ![5_left]                  | ![5_right]                | ![6_left]                     | ![6_right]                      | 3  |
+|    | U (L’ U2 L) U2 (U)         | U’ (R U2 R’) U2 (U’)      | U (L’ U’ L) U2 (U)            | U’ (R U R’) U2 (U’)             |    |
+| 4  | ![7_left]                  | ![7_right]                | ![8_left]                     | ![8_right]                      | 4  |
+|    | U (L’ U L) U’ (U’)         | U’ (R U’ R’) U (U)        | (L’ U’ L) U2 (U) U’ (U)       | (R U R’) U2 (U’) U (U’)         |    |
+| 5  | ![9_left]                  | ![9_right]                | ![10_left]                    | ![10_right]                     | 5  |
+|    | U (L’ U L) U2 ( )          | U’ (R U’ R’) U2 ( )       | U (L’ U’ L) y’ U’ [R U R’]    | U’ (R U R’) y U [L’ U’ L]       |    |
+| 6  | ![11_left]                 | ![11_right]               | ![12_left]                    | ![12_right]                     | 6  |
+|    | (L’ U2 L) U (U’)           | (R U2 R’) U’ (U)          | (L’ U’ L) U2 ( ) U ( )        | (R U R’) U2 ( ) U’ ( )          |    |
+| 7  | ![13_left]                 | ![13_right]               | ![14_left]                    | ![14_right]                     | 7  |
+|    | (L’ U’ L) U’ (U)           | (R U R’) U (U’)           | (L’ U2 L) U’ (U)              | (R U2 R’) U (U’)                |    |
+| 8  | ![15_left]                 | ![15_right]               | ![16_left]                    | ![16_right]                     | 8  |
+|    | (L’ U’ L) U ( )            | (R U R’) U’ ( )           | (L’ U L) U’ ( )               | (R U’ R’) U ( )                 |    |
+| 9  | ![17_left]                 | ![17_right]               | ![18_left]                    | ![18_right]                     | 9  |
+|    | (L’ U L) U (U’) U2 ( )     | (R U’ R’) U’ (U) U2 ( )   | (L’ U L) U ( ) y’ U’ [R U R’] | (R U’ R’) U’ ( ) y U [L’ U’ L]  |    |
+| 10 | ![19_left]                 | ![19_right]               |                               | ![22_right]                     | 10 |
+|    | U’ (L’ U L) U y’ [R U’ R’] | U (R U’ R’) U’ y [L’ U L] |                               | (R U’ R’) U y’ [R’ U2 R] U2 [U] |    |
+| 11 |                            | ![20_right]               |                               | ![21_right]                     | 11 |
+|    |                            | (R U R’) U’ ( ) U’ ( )    |                               | (R U’ R’) U y’ [R’ U2 R] U2 [U] |    |
 
 
 [//]: # (Links to png images)
